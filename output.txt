@@ -1,0 +1,65 @@
+Fitting 3 folds for each of 3 candidates, totalling 9 fits
+Fitting 3 folds for each of 6 candidates, totalling 18 fits
+Fitting 3 folds for each of 6 candidates, totalling 18 fits
+
+All Parameter Performance:
+    Kernel     C  Gamma  Degree  Mean CV Score  Std CV Score  Train Score  \
+10    poly   0.1    NaN     3.0       0.797875      0.003124     0.806250   
+12    poly   1.0    NaN     3.0       0.782583      0.005103     0.801417   
+3      rbf   0.1  scale     NaN       0.779542      0.004626     0.784708   
+4      rbf   0.1   auto     NaN       0.779542      0.004626     0.784708   
+5      rbf   1.0  scale     NaN       0.776583      0.007206     0.789375   
+6      rbf   1.0   auto     NaN       0.776583      0.007206     0.789375   
+0   linear   0.1    NaN     NaN       0.770333      0.003442     0.770479   
+1   linear   1.0    NaN     NaN       0.770167      0.003306     0.770292   
+2   linear  10.0    NaN     NaN       0.769917      0.003407     0.770271   
+14    poly  10.0    NaN     3.0       0.767167      0.004265     0.801875   
+7      rbf  10.0  scale     NaN       0.764333      0.008719     0.812667   
+8      rbf  10.0   auto     NaN       0.764333      0.008719     0.812667   
+13    poly  10.0    NaN     2.0       0.746917      0.003130     0.756792   
+11    poly   1.0    NaN     2.0       0.738708      0.000257     0.746125   
+9     poly   0.1    NaN     2.0       0.729000      0.005574     0.732562   
+
+    Total Support Vectors  
+10                  18887  
+12                  18887  
+3                   16508  
+4                   16508  
+5                   16508  
+6                   16508  
+0                   17979  
+1                   17979  
+2                   17979  
+14                  18887  
+7                   16508  
+8                   16508  
+13                  18887  
+11                  18887  
+9                   18887  
+
+Best kernel: poly
+[[-0.06425015 -0.06425015 -0.06425015 ...  0.22543678  0.22543678
+   0.22543678]]
+
+Dual coefficients shape: (1, 18887)
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.86      0.89      0.87      4687
+           1       0.54      0.48      0.51      1313
+
+    accuracy                           0.80      6000
+   macro avg       0.70      0.68      0.69      6000
+weighted avg       0.79      0.80      0.79      6000
+
+Confusion Matrix:
+ [[4163  524]
+ [ 689  624]]
+Accuracy: 0.7978333333333333
+
+Number of support vectors per class: [14682  4205]
+Total support vectors: 18887
+Dual coefficients shape: (1, 18887)
+Dual coefficients (first 10 values): [-0.06425015 -0.06425015 -0.06425015 -0.06425015 -0.06425015 -0.06425015
+ -0.06425015 -0.06425015 -0.06425015 -0.06425015]
